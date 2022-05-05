@@ -15,9 +15,10 @@ addr-a: Department of Carrot Science, Bunny University, Lagomorph,
 addr-b: Department  of Canine  Evasion,  
     Bunny  University,  Lagomorph,  Connecticut, United States of America
 
-fig1-title: This is the Fig 1 title.
-fig1-legend: This is the Fig 1 legend.
-fig2-title: Plos-one tempalte position.
-fig2-legend: Detail position of plos-one template.
+fig-sub-title: This is the Fig 1 title.
+fig-sub-legend: This is the Fig 1 legend.
+fig-sam-title: Plos-one tempalte position.
+fig-sam-legend: Detail position of plos-one template.
 tab1-title: This is the Table 1 Title.
 tab1-legend: This is the Table 1 legend.
+

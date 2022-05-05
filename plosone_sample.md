@@ -1,6 +1,5 @@
 ---
 mustache: ./variables.yaml
-
 ---
 
 
@@ -66,38 +65,30 @@ pharetra quam, vitae convallis nunc.
 
 # Level 1 heading  
 Lorem  ipsum  dolor  sit  amet,  consectetur  adipiscing  elit. 
-Vestibulum  adipiscing  urna  ut  lectus  gravida,  vitae  (@fig:plos-sub) 
+Vestibulum  adipiscing  urna  ut  lectus  gravida,  vitae  (@fig:sub) 
 interdum.  Donec tincidunt porta sem nec hendrerit. Vestibulum nec 
 pharetra quam, vitae convallis nunc. Mauris in mattis sapien. Fusce 
-sodales vulputate auctor. Nam sit amet nulla lacus  a, Figs 1 and 2 
+sodales vulputate auctor. Nam sit amet nulla lacus  a, . 
 ultrices tellus. Integer rutrum aliquet sapien, eu fermentum magna pellentesque vitae.
 
-![**Fig 1. {{fig1-title}}** {{fig1-legend}}](./Fig1.png){tag="B.1"}
+![**{{fig-sub-title}}** {{fig-sub-legend}}](./Fig1.png){#fig:sub}
 
-This is a Fig 1. Lorem  ipsum  dolor  sit  amet,  consectetur  adipiscing  elit. 
+This is a @fig:sub. Lorem  ipsum  dolor  sit  amet,  consectetur  adipiscing  elit. 
 Vestibulum adipiscing urna ut lectus gravida, vitae blandit tortor interdum. 
 Donec $p^2$ et $q^2$ tincidunt porta sem nec hendrerit. 
 
 <!-- comment way: Additional figure for figure numbering -->
 
-![**Fig 2. {{fig2-title}}** {{fig2-legend}}](./Fig2.png){width=600px}
+![**{{fig-sam-title}}** {{fig-sam-legend}}](./Fig2.png){#fig:sam width=600px}
 
 
-PLOS ONE's template file is located in the above (Fig 2),
-The original sentencies are as follows.
+PLOS ONE's template file is located in the above (@fig:sam), and 
+if you want to cite multiple figures, you can suppress prefix and write like
+Figs [-@fig:sub] and [-@fig:sam]. The original sentencies are as follows.
 
+$$p^2+2pq+q^2$$ {#eq:id1}
 
-
-```table
----
-alignment: CCC
-table-width: 1/1
-markdown: true
----
-&nbsp;, $p^2+2pq+q^2$,\(1\) 
-```
-
-From the equation. Vestibulum nec pharetra quam, vitae convallis nunc. Mauris 
+From the equation (@eq:id1). Vestibulum nec pharetra quam, vitae convallis nunc. Mauris 
 in mattis sapien. Fusce sodales  vulputate auctor. Nam lacus felis, 
 fermentum sit amet nulla ac, tristique ultrices tellus. Integer rutrum 
 aliquet  sapien,  eu  fermentum  magna  pellentesque  vitae.  Integer
@@ -119,12 +110,11 @@ Lorem  ipsum  dolor  sit  amet,  consectetur  adipiscing  elit.
 Vestibulum  adipiscing  urna  ut  lectus  gravida,  et  bland  Table  1
 Donec tincidunt porta sem nec hendrerit. Vestibulum nec pharetraquam, vitae convalli. Fido nemo.
 
-::: {custom-style="Table Caption"}
-**{{tab1-title}}**
-:::
+
 ```table
 ---
-include: Table1.csv
+include: Table1.csv 
+caption : This is the Table 1 Title. This is the Table 1 legend. {#tbl:1}
 markdown: true
 table-width: 5/5
 alignment: LLLLL
@@ -137,6 +127,7 @@ alignment: LLLLL
 ^b^Footnotes should have corresponding symbols in the table.
 :::
 
+See [@tbl:1]
 
 # Conclusion
 Lorem ipsum dolor sit amet, consectetur adipiscing. 

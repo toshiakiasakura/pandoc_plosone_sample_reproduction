@@ -9,6 +9,16 @@ filters:
 - pantable  # For table import from .csv files.
 - pandoc-mustache  # For variable substition purpose.
 - pandoc-docx-pagebreakpy # For pagebreak
-  # not work well, - pandoc-eqnos # For equation numbering
-  # not work well, - pandoc-fignos # For figure numbering
+- pandoc-crossref
+
+metadata:
+    tableEqns: true
+    titleDelim: "."
+    tableTitle: "Table"
+    tblPrefix: "Table"
+    figureTitle: "Fig"
+    figPrefix: 
+        - "Fig"
+        - "Figs"
+
 
