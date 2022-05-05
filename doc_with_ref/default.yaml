@@ -1,0 +1,31 @@
+to: docx  # output format type.
+output-file: ./result.docx  # output file name.
+input-files:
+- plosone_sample.md  # input file name(s).
+
+from: markdown  # input file format.
+reference-doc: plosone_template.docx  # style template word file.
+filters:
+- pandoc-mustache  # For variable substition purpose.
+- pantable  # For table import from .csv files.
+- pandoc-docx-pagebreakpy # For pagebreak
+- pandoc-crossref
+  #- pandoc-zotxt.lua
+- type: citeproc
+
+bibliography: 1_plosone.bib
+csl: plos-one.csl
+
+metadata:
+    tableEqns: true
+    titleDelim: "."
+    tableTitle: "Table"
+    figureTitle: "Fig"
+    tblPrefix: "Table"
+    figPrefix: 
+        - "Fig"
+        - "Figs"
+    eqnPrefix: "Eq."
+    lang: en
+
+
