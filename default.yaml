@@ -15,10 +15,11 @@ metadata:
     tableEqns: true
     titleDelim: "."
     tableTitle: "Table"
-    tblPrefix: "Table"
     figureTitle: "Fig"
+    tblPrefix: "Table"
     figPrefix: 
         - "Fig"
         - "Figs"
+    eqnPrefix: "Eq."
 
 
