@@ -1,0 +1,24 @@
+id: 1
+
+inst-ex: Department, Institution, City, State, Country
+inst-dermato: Department of Dermatology, Division of Rabbit Health, 
+    Section of Veterinary 14 Medicine, St. Hare Hospital, San Francisco, 
+    California, United States of America
+inst-libraries: Department of Libraries and Archives, National Contemporary Bunny Museum, 
+    17 Lagomorph, Connecticut, United States of America
+inst-restoration: Department of Restoration, National Contemporary Bunny Museum, 
+    Lagomorph, Connecticut, United States of America
+inst-archaeology: Department  of  Archaeology,  Bunny  University,    
+    Lagomorph,  Connecticut,  United States of America
+addr-a: Department of Carrot Science, Bunny University, Lagomorph, 
+    Connecticut, United States of America
+addr-b: Department  of Canine  Evasion,  
+    Bunny  University,  Lagomorph,  Connecticut, United States of America
+
+fig-sub-title: This is the Fig 1 title.
+fig-sub-legend: This is the Fig 1 legend.
+fig-sam-title: Plos-one tempalte position.
+fig-sam-legend: Detail position of plos-one template.
+tab1-title: This is the Table 1 Title.
+tab1-legend: This is the Table 1 legend.
+
