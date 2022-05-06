@@ -17,6 +17,7 @@ bibliography: 1_plosone.bib
 csl: plos-one.csl
 
 metadata:
+    mustache: ./variables.yaml
     tableEqns: true
     titleDelim: "."
     tableTitle: "Table"

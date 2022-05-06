@@ -1,8 +1,3 @@
----
-mustache: ./variables.yaml
----
-
-
 # This is the article title
 \
 \
